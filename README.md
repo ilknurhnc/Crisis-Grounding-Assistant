@@ -344,3 +344,43 @@ Potential future improvements:
 
 Project planning and architecture phase.
 Initial MVP scope and system design are currently being defined.
+
+
+inneranchor/
+│
+├── backend/
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── schemas.py
+│   │   ├── routes/
+│   │   │   ├── profile.py
+│   │   │   ├── checkin.py
+│   │   │   └── grounding.py
+│   │   ├── services/
+│   │   │   ├── profile_service.py
+│   │   │   ├── memory_service.py
+│   │   │   ├── grounding_service.py
+│   │   │   ├── recommendation_service.py
+│   │   │   └── llm.py
+│   │   └── prompts/
+│   │       └── grounding_prompt.py
+│   │
+│   ├── requirements.txt
+│   └── Dockerfile
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   ├── app.js
+│   └── Dockerfile
+│
+├── data/
+│   ├── profiles/
+│   ├── journals/
+│   ├── chroma/
+│   ├── sample_profile.json
+│   └── recommendations.json
+│
+├── docker-compose.yml
+├── README.md
+└── .gitignore
