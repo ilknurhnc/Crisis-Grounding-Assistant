@@ -1,3 +1,4 @@
+from typing import List
 from pydantic import BaseModel, Field
 
 
@@ -8,3 +9,15 @@ class CheckInRequest(BaseModel):
 class CheckInResponse(BaseModel):
     input_message: str
     support_message: str
+
+
+class ProfileRequest(BaseModel):
+    calming_colors: List[str] = []
+    safe_phrases: List[str] = []
+    helpful_activities: List[str] = []
+    triggers: List[str] = []
+
+
+class ProfileResponse(BaseModel):
+    message: str
+    profile: ProfileRequest

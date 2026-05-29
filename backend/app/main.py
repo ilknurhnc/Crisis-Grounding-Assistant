@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routes import checkin
+from app.routes import checkin, profile
 
 
 app = FastAPI(
@@ -19,13 +19,4 @@ app.add_middleware(
 )
 
 app.include_router(checkin.router)
-
-
-@app.get("/")
-def root():
-    return {"message": "InnerAnchor API is running"}
-
-
-@app.get("/health")
-def health():
-    return {"status": "ok"}
+app.include_router(profile.router)

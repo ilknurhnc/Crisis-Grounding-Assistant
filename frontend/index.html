@@ -9,14 +9,30 @@
     <main class="container">
         <h1>InnerAnchor</h1>
         <p class="subtitle">A small grounding assistant for difficult moments.</p>
-
-        <textarea id="messageInput" placeholder="How are you feeling right now?"></textarea>
-
-        <button id="sendButton">Get Grounding Support</button>
-
-        <section id="responseBox" class="response-box"></section>
+    
+        <section class="card">
+            <h2>Personal Support Profile</h2>
+    
+            <input id="colorsInput" placeholder="Calming colors, e.g. lavender, soft blue">
+            <input id="phrasesInput" placeholder="Safe phrases, e.g. This feeling is temporary">
+            <input id="activitiesInput" placeholder="Helpful activities, e.g. walking, cold water">
+            <input id="triggersInput" placeholder="Triggers, e.g. conflict, uncertainty">
+    
+            <button id="saveProfileButton">Save Profile</button>
+            <p id="profileStatus"></p>
+        </section>
+    
+        <section class="card">
+            <h2>Check-in</h2>
+    
+            <textarea id="messageInput" placeholder="How are you feeling right now?"></textarea>
+    
+            <button id="sendButton">Get Grounding Support</button>
+    
+            <section id="responseBox" class="response-box"></section>
+        </section>
     </main>
-
-    <script src="app.js"></script>
+    
+    <script src="app.js?v=5"></script>
 </body>
 </html>
