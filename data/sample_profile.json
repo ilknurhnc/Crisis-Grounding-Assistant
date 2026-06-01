@@ -1,14 +1,14 @@
 {
     "calming_colors": [
-        "blue"
+        "a"
     ],
     "safe_phrases": [
-        "sitting"
+        "b"
     ],
     "helpful_activities": [
-        "take breath slowly"
+        "c"
     ],
     "triggers": [
-        "thinking"
+        "d"
     ]
 }

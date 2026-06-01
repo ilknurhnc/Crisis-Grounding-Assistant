@@ -20,3 +20,13 @@ app.add_middleware(
 
 app.include_router(checkin.router)
 app.include_router(profile.router)
+
+
+@app.get("/")
+def root():
+    return {"message": "InnerAnchor API is running"}
+
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
